@@ -1,39 +1,125 @@
 html, body{
     margin: 0;
     padding: 0;
+    min-width: 960px;
     font-family: Roboto;
 }
 .FixedContainer {
-    width: 1920px;
+    width: 1900px;
     margin: 0 auto;
     position: relative;
 }
+.central_container_block_grey{
+    height: 680px;
+    background-color: #fbfbfb;
+    overflow:hidden;
+}
+
+.central_container_block_white{
+    height: 647px;
+    background-color: rgba(255, 255, 255, 0.99);
+}
+#name_item_text{
+    font-size: 55px;
+    font-weight: 900;
+    margin: 200px 0 0 0;
+    padding: 0;
+}
+#skills_item_text{
+    padding: 0;
+    color: #8993ad;
+    font-size: 25px;
+    margin: 20px 0 0 0;
+}
+#more_item_button button{
+    font-size: 18px;
+    color: white;
+    background-color: #ff4e2e;
+    width: 270px;
+    height: 60px;
+    margin: 30px 0 0 0;
+    border: 0;
+}
 #menu{
     height: 100px;
+    background-color: #fbfbfb;
 }
 
 .Menu_bar{
+    padding-left: 375px;
     float: left;
-    margin-left: 375px;
+    /*margin-left: 375px;*/
     padding-top: 40px;
-    width: 800px;
+    width: 550px;
 }
 
 .Menu_bar a{
     padding: 0 35px 0 0;
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
+    font-size: 16px;
 }
-#menu_bar_contacts button{
-    width: 90px;
-    border-bottom-color: crimson;
-    border-bottom: 2px;
+/*Посещенная ссылка*/
+.Menu_bar a:visited{
+    text-decoration: none;
+}
+/*При наведении*/
+.Menu_bar a:hover{
+    color: black;
+}
+/*При клике на ссылку*/
+.Menu_bar a:active{
+    color: crimson;
+}
+.Menu_bar a:nth-child(2){
+    color: #d86380;
+    text-decoration: underline;
+}
+/*#menu_bar_contacts button{*/
+#contact_button{
+    width: 207px;
+    height: 45px;
     background-color: white;
     margin-left: 30px;
+    font-size: 16px;
+    color: #d86380;
+    border: 2px solid #d86380;
+    border-radius: 10px;
+}
+#menu_bar_contacts b{
+    font-weight: 700;
+    font-size: 25px;
 }
 #menu_bar_contacts{
     float: right;
     margin-right: 375px;
-    padding-top: 40px;
+    padding-top: 32px;
+    text-align: center;
 }
+#left_column{
+    position: relative;
+    float: left;
+    width: 700px;
+    /*padding-left: 375px;*/
+    margin-left: 375px;
+    height: 680px;
+    /*background-color: aquamarine;*/
+}
+#right_column{
+    float: right;
+    width: 800px;
+    margin-left: 10px;
+    /*background-color: aqua;*/
+    height: 680px;
+}
+#skills{
+    width: 1170px;
+}
+.central_container_block_grey .FixedContainer{
+    overflow-y: hidden;
+}
+
 
 /* roboto-300 - latin_cyrillic-ext_cyrillic */
 @font-face {
@@ -99,4 +185,20 @@ html, body{
     url('../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.woff') format('woff'), /* Modern Browsers */
     url('../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.ttf') format('truetype'), /* Safari, Android, iOS */
     url('../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+
+.Ellipse_1 {
+    background-image: -moz-linear-gradient( 77deg, rgb(255,143,90) 0%, rgb(255,47,150) 99%);
+    background-image: -webkit-linear-gradient( 77deg, rgb(255,143,90) 0%, rgb(255,47,150) 99%);
+    background-image: -ms-linear-gradient( 77deg, rgb(255,143,90) 0%, rgb(255,47,150) 99%);
+    position: relative;
+    left: 5px;
+    top: 18px;
+    width: 1220px;
+    height: 631px;
+    z-index: 99;
+    display: block;
+    -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+    border-radius: 30% 50% 90% 50% / 60% 60% 40% 40%;
 }
