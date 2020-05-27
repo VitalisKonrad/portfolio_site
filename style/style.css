@@ -10,16 +10,17 @@ html, body{
     position: relative;
 }
 .FixedContainerAbsolute {
-    max-width: 1880px;
-    margin: 0 auto;
+    max-width: 1900px;
+    width: 100%;
+    margin: 0;
     position: absolute;
 }
 .central_container_block_grey{
     height: 680px;
     background-color: #fbfbfb;
-    /*overflow:hidden;*/
+    overflow:hidden;
     margin: 0 0 0 auto;
-    /*display: inline-block;*/
+    max-width: 100%;
 }
 
 .central_container_block_white{
@@ -38,7 +39,16 @@ html, body{
     font-size: 25px;
     margin: 20px 0 0 0;
 }
-#more_item_button button{
+#skills_item_text2{
+    padding-top: 30px;
+    color: #8993ad;
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: normal;
+
+    /*margin: 20px 0 0 0;*/
+}
+.more_item_button button{
     font-size: 18px;
     color: white;
     background-color: #ff4e2e;
@@ -83,7 +93,7 @@ html, body{
     color: #d86380;
     text-decoration: underline;
 }
-/*#menu_bar_contacts button{*/
+
 #contact_button{
     width: 207px;
     height: 45px;
@@ -100,64 +110,77 @@ html, body{
 }
 #menu_bar_contacts{
     float: right;
-    /*margin-right: 375px;*/
     padding-top: 32px;
     text-align: center;
 }
 #left_column{
-    position: center;
+    position: relative;
     float: left;
     width: 500px;
-
-    /*padding-left: 375px;*/
-    /*margin-left: 375px;*/
     height: 680px;
-    /*background-color: aquamarine;*/
+    margin: 0 auto;
 }
 #right_column{
     position: relative;
-    float: left;
-    /*float: right;*/
-    width: 670px;
-    /*margin-left: 10px;*/
-    background-color: aqua;
+    float: right;
+    width: 500px;
     height: 680px;
-
+    margin: 0 auto;
 }
 #lleft_column{
     float: left;
     position: relative;
-    max-width: 375px;
-    min-width: 10px;
-    /*max-width: 605px;*/
-    /*min-width: auto;*/
+    width: 40%;
+    max-width: 365px;
+    min-width: 2px;
     height: 680px;
     background-color: #98b195;
-    display: block;
 }
 #rright_column{
-    float: left;
-    /*position: relative;*/
-    /*max-width: 305px;*/
+    float: right;
+    position: relative;
+    width: 40%;
+    max-width: 305px;
+    min-width: 2px;
     height: 680px;
     background-color: #98b195;
-    display: block;
-    max-width: 375px;
-    min-width: 10px;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    outline: 1px solid red;
 }
 #skills{
     width: 1170px;
+    margin-top: 90px;
 }
 .central_container_block_grey .FixedContainer{
-    overflow-y: hidden;
+    /*overflow-y: hidden;*/
 }
 .central_container_block_grey svg{
     float: right;
     position: relative;
-
+}
+#right_column img{
+    position: absolute;
+    bottom: 0;
+    /*box-shadow: 0 0 10px rgba(0,0,0,0.5); !* Параметры тени *!*/
+}
+.CenterColumnTitle{
+    font-size: 54px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 100px;
 }
 
-/* roboto-300 - latin_cyrillic-ext_cyrillic */
+.colourIcon{
+    display: flex;
+    justify-content: space-around;
+}
+.colourIcon i{
+    text-align: center;
+}
+
+
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
