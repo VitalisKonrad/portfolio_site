@@ -39,7 +39,7 @@ html, body{
     font-size: 25px;
     margin: 20px 0 0 0;
 }
-#skills_item_text2{
+.skills_item_text2{
     padding-top: 30px;
     color: #8993ad;
     font-size: 20px;
@@ -187,7 +187,18 @@ html, body{
 .colourIcon i{
     text-align: center;
 }
-
+#job_example{
+    margin-top: 70px;
+}
+#job_example_photo{
+    display: flex;
+    justify-content: space-around;
+}
+#job_example_text{
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+}
 
 @font-face {
     font-family: 'Roboto';
